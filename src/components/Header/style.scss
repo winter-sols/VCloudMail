@@ -5,6 +5,23 @@
   padding: 32px 48px 0 48px;
   justify-content: space-between;
 
+  &-logo {
+    align-items: center;
+    cursor: pointer;
+
+    & > a {
+      text-decoration: none;
+      color: rgba($color: $Black, $alpha: 0.7);
+      font-size: 28px;
+      font-weight: 700;
+      transition: 0.5s;
+
+      &:hover {
+        color: rgba($color: $Success, $alpha: 0.7);
+      }
+    }
+  }
+
   &-navbar {
     gap: 8px;
 
@@ -15,6 +32,11 @@
       font-weight: 600;
       padding: 8px 12px;
       cursor: pointer;
+      transition: 0.5s;
+
+      &:hover {
+        color: rgba($color: $Success, $alpha: 0.7);
+      }
     }
   }
 }

@@ -5,9 +5,11 @@ import { APP_ROUTERS } from "configurations"
 
 const Header = () => (
   <div className="header flex">
-    Header
+    <div className="header-logo flex">
+      <Link to={APP_ROUTERS.HOME}>VCloudMail</Link>
+    </div>
     <div className="header-navbar flex">
-      <Link to={APP_ROUTERS.DASHBOARD}>Home</Link>
+      <Link to={APP_ROUTERS.DASHBOARD}>Dashboard</Link>
       <Link to={APP_ROUTERS.SERVICES}>Services</Link>
       <Link to={APP_ROUTERS.TESTIMONIAL}>Testimonial</Link>
       <Link to={APP_ROUTERS.CONTACT_US}>Contact Us</Link>

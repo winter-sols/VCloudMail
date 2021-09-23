@@ -19,7 +19,6 @@ html {
   font-weight: 500;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  transition: 0.5s;
 }
 
 #root {
@@ -33,6 +32,29 @@ html {
 
 .flex-column {
   flex-direction: column;
+}
+
+.page {
+  width: 100%;
+  padding: 32px 0;
+}
+
+@media (max-width: 1024px) {
+  .page {
+    padding: 24px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 16px 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .page {
+    padding: 8px 0;
+  }
 }
 
 ::-webkit-scrollbar {

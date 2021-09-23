@@ -1,1 +1,63 @@
 @import "../../styles/variables.scss";
+
+.footer {
+  border-top: 2px solid rgba($color: $Black, $alpha: 0.6);
+  gap: 32px;
+
+  &-menu {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    & > a {
+      text-decoration: none;
+      color: rgba($color: $Black, $alpha: 0.7);
+      transition: 0.5s;
+
+      &:not(:last-child) {
+        padding-right: 16px;
+        border-right: 2px solid rgba($color: $Black, $alpha: 0.6);
+      }
+
+      &:hover {
+        color: rgba($color: $Success, $alpha: 0.7);
+      }
+    }
+  }
+
+  &-follow {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+
+    & > a {
+      text-decoration: none;
+      color: rgba($color: $Black, $alpha: 0.7);
+      transition: 0.5s;
+
+      &:hover {
+        color: rgba($color: $Success, $alpha: 0.7);
+      }
+
+      & > svg {
+        font-size: 32px;
+      }
+    }
+  }
+
+  &-copyright {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    & > span {
+      font-size: 20px;
+      font-weight: 600;
+      margin-right: 4px;
+    }
+  }
+}
